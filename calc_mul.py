@@ -9,7 +9,11 @@ def calc(A,B):
         if len(ai) == len(p.findall(ai)) and len(bi) == len(p.findall(bi)):
                 a=float(ai)
                 b=float(bi)
-                if 0<a and a<b and b<1000:
+		if a>b:
+                        tmp = a
+                        a = b
+                        b = tmp
+                if 0<a and a<=b and b<1000:
                         valid=True
                 else:
                         valid=False
