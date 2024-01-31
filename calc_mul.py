@@ -12,7 +12,7 @@ def calc(A,B):
                 if a>b:
                         tmp = a
                         a = b
-                        b = a
+                        b = tmp
                 if 0<a and a<=b and b<1000:
                         valid=True
                 else:
