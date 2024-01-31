@@ -10,10 +10,10 @@ def calc(A,B):
                 a=float(ai)
                 b=float(bi)
 		if a>b:
-                        tmp = a
-                        a = b
-                        b = tmp
-                if 0<a and a<=b and b<1000:
+			tmp = a
+			a = b
+			b = tmp
+		if 0<a and a<=b and b<1000:
                         valid=True
                 else:
                         valid=False
